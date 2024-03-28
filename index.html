@@ -1,62 +1,241 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="icon" href="https://glitch.com/favicon.ico" />
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BOOTSTRAP-UI by Namrata Sule</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.1.3/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
 
-    <title>bootstrap ui-project</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
-      crossorigin="anonymous"
-    />
+    <!-- Typography -->
+    <div class="typography-section">
+        <h1>Heading 1</h1>
+        <h2>Heading 2</h2>
+        <h3>Heading 3</h3>
+        <h4>Heading 4</h4>
+        <p>This is a paragraph showcasing the Google Font.</p>
+    </div>
 
-    <link rel="stylesheet" href="style.css" />
+    <!-- Buttons -->
+    <div class="buttons-section">
+        <button type="button" class="btn btn-primary btn-sm">Small Button</button>
+        <button type="button" class="btn btn-secondary btn-sm">Small Button</button>
+        <button type="button" class="btn btn-primary">Medium Button</button>
+        <button type="button" class="btn btn-secondary">Medium Button</button>
+        <button type="button" class="btn btn-primary btn-lg">Large Button</button>
+        <button type="button" class="btn btn-secondary btn-lg">Large Button</button>
+    </div>
 
-    <script src="script.js" defer></script>
-  </head>
-  <body>
-    <main class="container mt-3">
-      <header class="row">
-        <div class="col">
-          <h1>ui component library</h1>
-          <h2>Namrata Sule</h2>
-          <p>This is a multipurpose css component library</p>
+    <!-- Cards -->
+    <div class="cards-section">
+        <!-- Cards without image -->
+        <div class="card" style="width: 18rem;">
+            <div class="card-body">
+                <h5 class="card-title">Card Title</h5>
+                <p class="card-text">Some quick example text to build on the card title.</p>
+                <a href="#" class="btn btn-primary">Button</a>
+            </div>
         </div>
-        <section class="row">
-          <h3>Button styles</h3>
-          <p>
-            Buttons are a global component with the following states: hover,
-            focus and active.
-          </p>
-          <div class="col">
-            <button type="button" class="btn btn-primary">Primary</button>
+        <!-- Repeat for each card as needed -->
+        <div class="container py-4">
+
+          <!-- Cards with Images -->
+          <div class="row row-cols-1 row-cols-md-2 g-4">
+              <div class="col">
+                  <div class="card">
+                      <img src="https://via.placeholder.com/500x250" class="card-img-top" alt="...">
+                      <div class="card-body">
+                          <h5 class="card-title">Card with Image</h5>
+                          <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content.</p>
+                          <a href="#" class="btn btn-primary">Go somewhere</a>
+                      </div>
+                  </div>
+              </div>
+              <div class="col">
+                  <div class="card">
+                      <img src="https://via.placeholder.com/500x250" class="card-img-top" alt="...">
+                      <div class="card-body">
+                          <h5 class="card-title">Card with Image</h5>
+                          <p class="card-text">This card has a different image and text but fits well in any grid layout.</p>
+                          <a href="#" class="btn btn-primary">Go somewhere</a>
+                      </div>
+                  </div>
+              </div>
           </div>
-          <div class="col">
-            <button type="button" class="btn btn-secondary">Secondary</button>
+      
+          <!-- Cards without Images -->
+          <div class="row row-cols-1 row-cols-md-2 g-4 mt-4">
+              <div class="col">
+                  <div class="card">
+                      <div class="card-body">
+                          <h5 class="card-title">Card without Image</h5>
+                          <p class="card-text">This is a card without an image. It contains only text to focus on the content.</p>
+                          <a href="#" class="btn btn-primary">Go somewhere</a>
+                      </div>
+                  </div>
+              </div>
+              <div class="col">
+                  <div class="card">
+                      <div class="card-header">
+                          Featured
+                      </div>
+                      <div class="card-body">
+                          <h5 class="card-title">Special Card without Image</h5>
+                          <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                          <a href="#" class="btn btn-primary">Go somewhere</a>
+                      </div>
+                  </div>
+              </div>
           </div>
-          <div class="col">
-            <button type="button" class="btn btn-success">Success</button>
-          </div>
-          <div class="col">
-            <button type="button" class="btn btn-danger">Danger</button>
-          </div>
-          <div class="col">
-            <button type="button" class="btn btn-warning">Warning</button>
-          </div>
-          <div class="col">
-            <button type="button" class="btn btn-info">Info</button>
-          </div>
-        </section>
-      </header>
-    </main>
-  </body>
+      
+      </div>
+      
+
+    <!-- Alerts -->
+    <div class="alerts-section">
+        <div class="alert alert-primary" role="alert">Primary Alert</div>
+        <div class="alert alert-secondary" role="alert">Secondary Alert</div>
+        <div class="alert alert-success" role="alert">Success Alert</div>
+        <div class="alert alert-danger" role="alert">Danger Alert</div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">Brand</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Features</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Pricing</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">About</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <div class="d-flex flex-column flex-shrink-0 p-3 bg-light" style="width: 280px; height: 100vh;">
+      <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-dark text-decoration-none">
+        <span class="fs-4">Sidebar</span>
+      </a>
+      <hr>
+      <ul class="nav nav-pills flex-column mb-auto">
+        <li class="nav-item">
+          <a href="#" class="nav-link active" aria-current="page">
+            Home
+          </a>
+        </li>
+        <li>
+          <a href="#" class="nav-link link-dark">
+            Features
+          </a>
+        </li>
+        <li>
+          <a href="#" class="nav-link link-dark">
+            Pricing
+          </a>
+        </li>
+        <li>
+          <a href="#" class="nav-link link-dark">
+            FAQs
+          </a>
+        </li>
+        <li>
+          <a href="#" class="nav-link link-dark">
+            About
+          </a>
+        </li>
+      </ul>
+    </div>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">Brand</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Services
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                <li><a class="dropdown-item" href="#">Web Design</a></li>
+                <li><a class="dropdown-item" href="#">Development</a></li>
+                <li><a class="dropdown-item" href="#">SEO</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Pricing</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">About Us</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+     <!-- carousel -->
+
+    <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="https://via.placeholder.com/800x400?text=First+Slide" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="https://via.placeholder.com/800x400?text=Second+Slide" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="https://via.placeholder.com/800x400?text=Third+Slide" class="d-block w-100" alt="...">
+        </div>
+      </div>
+    </div>
+    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="https://via.placeholder.com/800x400?text=First+Slide" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="https://via.placeholder.com/800x400?text=Second+Slide" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="https://via.placeholder.com/800x400?text=Third+Slide" class="d-block w-100" alt="...">
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+    
+    
+            
+
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.1.3/js/bootstrap.bundle.min.js"></script>
+</body>
 </html>
